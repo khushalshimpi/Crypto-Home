@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTO-HOME</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <header>
+       <a href="" class="logo">
+           <img src="./images/logo.png" alt="" class="logo-img">
+           <div>
+              <span>CRYPTO-HOME</span>
+           </div>
+       </a>
+       <ul class="menu-list">
+           <li><a href="">Market</a></li>
+           <li><a href="">Features</a></li>
+           <li><a href="">White Papers</a></li>
+           <li><a href="">About Us</a></li>
+       </ul>
+
+       <button class="dropdown-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z"/></svg>
+       </button>
+   </header>
+   <ul class="dropdown-menu">
+    <li><a href="">Market</a></li>
+    <li><a href="">Features</a></li>
+    <li><a href="">White Papers</a></li>
+    <li><a href="">About Us</a></li>
+</ul>
+   <section class="start_up">
+    <div>
+      <h1>BUY &</h1>
+      <h1>SELL CRYPTO</h1>
+
+      <p>
+         World biggest Cryptocurrency exchange available on web <br>
+         as well as mobile phone
+      </p>
+      <button class="get-started">EXPLORE MORE</button>
+    </div>
+   
+ </section>
+ <div class="card">
+    <div class="card1">
+        <img src="./images/bitcoin.png" alt="">
+        <h3>$4024500</h3>
+        <h4>Bitcoin</h4>
+    </div>
+    <div class="card1">
+        <img src="./images/ethereum.png" alt="">
+        <h3>$5540</h3>
+        <h4>Ethereum</h4>
+    </div>
+    <div class="card1">
+        <img src="./images/dogecoin.png" alt="">
+        <h3>$0.22</h3>
+        <h4>Dogecoin</h4>
+    </div>
+   
+</div>
+
+ <script>
+     const dropmenu = document.querySelector('ul.dropdown-menu');
+     const dropbtn = document.querySelector('.dropdown-btn');
+
+     dropbtn.addEventListener('click',()=>{
+         dropmenu.classList.toggle('active');
+         dropbtn.classList.toggle('fill')
+     })
+ </script>
+</body>
+</html>
